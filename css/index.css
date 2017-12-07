@@ -1,0 +1,180 @@
+html{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    /*background-color: black;*/
+
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+   background-color: #269abc;
+
+}
+
+/*主标题栏样式*/
+.main_title{
+    width: 100%;
+    height: 5%;
+    overflow: hidden;
+    background-color: black;
+    color: white;
+}
+
+/*导航栏样式*/
+.main_nav{
+    background-color: black;
+    width: 100%;
+    height: 10%;
+    margin: 0;
+    padding: 0;
+}
+
+.main_nav_table{
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    /*font-size:small;*/
+    text-align: center;
+
+    color: white;
+}
+.main_nav_tr{
+    /*background-color: aqua;*/
+}
+.main_nav_th{}
+
+
+/*显示区样式*/
+.main_detail{
+    background-color: white;
+    width: 100%;
+    height: 85%;
+
+}
+
+.main_detail_item{
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    display: none;
+}
+
+
+
+
+/*灯模块*/
+.sw{
+    width: 80px;
+    height: 80px;
+
+    display: inline-block;
+
+    /*display: table;*/
+
+    /*padding: 10px;*/
+
+    margin: 10px;
+
+    text-align: center;
+    background-color: chartreuse;
+
+    /*padding: 10px;*/
+}
+
+.but{
+    /*display: table-cell;*/
+    /*vertical-align:middle;*/
+
+    /*margin: 0 auto;*/
+
+    margin-top: 6px;
+    margin-bottom: 10px;
+
+}
+.text_ch{
+    /*display: table-cell;*/
+    /*vertical-align:middle;*/
+
+
+    background-color: blueviolet;
+
+}
+.text_en{
+    /*display: table-cell;*/
+    /*vertical-align:middle;*/
+
+    background-color: coral;
+}
+
+
+/*空调界面*/
+.aircon_show{
+    width: 100%;
+    height: 100px;
+
+    background-color: #8c8c8c;
+}
+
+.aircon_set{
+    width: 100%;
+    height: 80px;
+
+    margin: 20px 20px 0px 0px;
+
+    padding: 0px 0px 10px 0px;
+}
+
+.aircon_set .btn-primary {
+    color: black;
+}
+
+/*.aircon_temp{*/
+    /*width: 100%;*/
+    /*height: 60px;*/
+
+    /*margin-top: 20px;*/
+
+    /*!*background-color: #4cae4c;*!*/
+/*}*/
+
+/*.aircon_speed{*/
+    /*width: 100%;*/
+    /*height: 60px;*/
+
+    /*margin-top: 20px;*/
+    /*!*background-color: #269abc;*!*/
+    /*padding: 10px;*/
+/*}*/
+/*.aircon_model{*/
+    /*width: 100%;*/
+    /*height: 60px;*/
+
+    /*margin-top: 20px;*/
+    /*!*background-color: #4cae4c;*!*/
+/*}*/
+
+/*服务按钮*/
+.service_btn{
+    width: 80px;
+    height: 80px;
+
+    display: inline-block;
+    margin: 100px 10px 10px 10px;
+
+    padding-top: 10px;
+    text-align: center;
+    background-color: chartreuse;
+}
+.service_btn span{
+    background-color: #d58512;
+
+    display: block;
+    margin: 10px;
+}
