@@ -6,8 +6,10 @@ $(document).ready(function () {
     console.log("Document ready");
 
     swtest();
-    navtest();
+    // navtest();
     cgtest();
+    flipswitchtest();
+    navbartest();
 
 });
 
@@ -173,6 +175,47 @@ function cgtest() {
     // $("input").on("checked",function () {
     //     console.log("controlgroup checked value: "+this.value);
     // });
+}
+
+//根据文档的测试
+function flipswitchtest() {
+
+    // $(".switch").on("flipswitchcreate", function (event, ui) {
+    //     console.log("switch");
+    // });
+
+    var sw2 = $("#switch2");
+
+    $( "#switch" ).on( "change", function() {
+        console.log(this.checked);
+
+        //绑定的事件响应直接定位到input元素，而通过选择器选择到的是数组对象，需要取第一个
+        console.log($( "#switch" ));
+        console.log(this);
+
+        //控制其他的flipswitch
+        // $("#switch2").flipswitch( "option", "checked", this.checked );
+        // $("#switch2").flipswitch( "refresh" ); //失败
+
+        // sw2.checked = this.checked;
+        // sw2.flipswitch( "option", "disabled", this.checked );
+        // sw2.flipswitch( "option", "enhanced", true );
+
+
+        // success
+        // sw2[0].checked = this.checked;
+        // sw2.flipswitch( "refresh" );
+        // console.log(sw2[1]);
+
+    } );
+}
+
+function navbartest() {
+
+    //只能响应这一个事件
+    $("#footnav").on("navbarcreate", function () {
+        console.log(this);
+    });
 }
 
 

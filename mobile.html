@@ -32,20 +32,22 @@
         <h1>酒店客控系统</h1>
     </div>
     <div data-role="content">
-        <a href="#pagelights" data-role="button">灯光控制</a>
-        <a href="#pageaircon" data-role="button">空调控制</a>
-        <a href="#pageservice" data-role="button">服务</a>
+        <a href="#pagelights" data-role="button" data-ajax="false">灯光控制</a>
+        <a href="#pageaircon" data-role="button" data-ajax="false">空调控制</a>
+        <a href="#pageservice" data-role="button">服务<small>Service</small></a>
     </div>
 </div>
 
 <!--灯光控制页面-->
-<div data-role="page" id="pagelights" data-theme="a">
+<div data-role="page" id="pagelights" data-theme="b">
     <div data-role="header" data-position="fixed">
         <a href="#pagemain" data-role="button" data-icon="home">首页</a>
         <h1>灯光控制</h1>
+        <a href="#" data-role="button" data-icon="refresh">刷新</a>
     </div>
     <div data-role="content">
         <input type="checkbox" data-role="flipswitch" name="switch" id="switch">
+        <input type="checkbox" data-role="flipswitch" name="switch2" id="switch2">
 
         <div class="mytabs">
             <div id="tab1">tab1</div>
@@ -82,11 +84,7 @@
                 <input name="radio-choice-h-2" id="radio-choice-h-2c" value="other" type="radio">
                 <label for="radio-choice-h-2c">Three</label>
                 <input name="radio-choice-h-2" id="radio-choice-h-2d" value="other" type="radio">
-                <label for="radio-choice-h-2d">Three</label>
-                <input name="radio-choice-h-2" id="radio-choice-h-2e" value="other" type="radio">
-                <label for="radio-choice-h-2e">Three</label>
-                <input name="radio-choice-h-2" id="radio-choice-h-2f" value="other" type="radio">
-                <label for="radio-choice-h-2f">Three</label>
+                <label for="radio-choice-h-2d">four</label>
             </fieldset>
         </form>
         <!--<select name="switch" id="switch" data-role="slider">-->
@@ -124,8 +122,8 @@
             </div>
         </div>
 
-        <p>Grids</p>
 
+        <p>Grids</p>
         <div class="ui-grid-b">
             <div class="ui-block-a" style="text-align: center">
                 <!--<div class="ui-bar ui-bar-a" style="height:60px">Block A</div>-->
@@ -168,6 +166,12 @@
 
         </div><!-- /grid-b -->
 
+        <!--感觉slider性能更好点-->
+        <label for="switch">Toggle Switch:</label>
+        <select name="switch" id="swi" data-role="slider">
+            <option value="on">On</option>
+            <option value="off">Off</option>
+        </select>
 
     </div>
 
@@ -177,7 +181,7 @@
                 <li><a href="#" name="1" class="ui-btn-active" id="bed1">卧室</a></li>
                 <li><a href="#" name="2" id="bed2">客厅</a></li>
                 <li><a href="#" name="3">卫生间</a></li>
-                <li><a href="#" name="4">厨房</a></li>
+                <li><a href="#" name="4">厨房<br/><small>bedroom</small></a></li>
                 <li><a href="#" name="5">客卫客卫</a></li>
                <!--5个以上（不含5个），会排成多行-->
             </ul>
@@ -217,16 +221,16 @@
     </div>
 
     <div data-role="footer" data-position="fixed">
-        <div data-role="navbar">
-            <ul>
-                <li><a href="#" class="ui-btn-active">One</a></li>
-                <li><a href="#">Two</a></li>
-                <li><a href="#">Three</a></li>
-                <li><a href="#">Four</a></li>
-                <li><a href="#">Four</a></li>
+        <!--<div data-role="navbar">-->
+            <!--<ul>-->
+                <!--<li><a href="#" class="ui-btn-active">One</a></li>-->
+                <!--<li><a href="#">Two</a></li>-->
+                <!--<li><a href="#">Three</a></li>-->
                 <!--<li><a href="#">Four</a></li>-->
-            </ul>
-        </div><!-- /navbar -->
+                <!--<li><a href="#">Four</a></li>-->
+                <!--&lt;!&ndash;<li><a href="#">Four</a></li>&ndash;&gt;-->
+            <!--</ul>-->
+        <!--</div>&lt;!&ndash; /navbar &ndash;&gt;-->
     </div>
 </div>
 
